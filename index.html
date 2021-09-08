@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color Of All Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mainContainer">
+            <h1>Changing the color of all button</h1>
+            <div class="allButtons">
+                <button class="btn btn-primary">Google</button>
+                <button class="btn btn-success">Facebook</button>
+                <button class="btn btn-danger">Youtube</button>
+                <button class="btn btn-warning">Yahoo</button>
+                <button class="btn btn-secondary">Gmail</button>
+            </div>
+            <form action="">
+                <select name="backdrop" id="background" onchange="colorChange(this)">
+                    <option value="default"> By Default </option>
+                    <option value="red"> Red </option>
+                    <option value="green"> Green </option>
+                    <option value="blue"> Blue </option>
+                    <option value="yellow"> Yellow </option>
+                    <option value="gray"> Gray </option>
+                    <option value="random"> Random </option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <script src="color.js"></script>
+</body>
+</html>
